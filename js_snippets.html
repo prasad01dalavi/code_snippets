@@ -1,0 +1,31 @@
+<script>
+
+function function_name()
+{
+	// things to repeat every 5 secs
+}
+
+setInterval("function_name()", 5000)
+
+// -------------------------------------------------------------------------- //
+
+// key_value json from django views = {"key1": "value1", "key2": "value2"}
+
+<input type="hidden" id="my_values" name="variable" value="{{ key_value }}">
+
+var my_data = JSON.parse(document.getElementById("my_values").value)
+
+alert(my_data.key1)  
+// this will give me value1 
+
+// -------------------------------------------------------------------------- //
+
+// post request using jquery
+$.post("http://127.0.0.1:8000/url/", {"key": "values"}, function(response){
+  alert(response)  
+});
+
+// -------------------------------------------------------------------------- //
+
+
+</script>
